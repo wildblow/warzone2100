@@ -1,0 +1,4 @@
+name: "WZ CodeQL config"
+
+paths-ignore: 
+  - '/3rdparty/'
