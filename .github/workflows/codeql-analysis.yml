@@ -28,6 +28,7 @@ jobs:
     
     - name: 'Install WZ Build Pre-reqs'
       run: |
+        sudo apt-get -u update
         DEBIAN_FRONTEND=noninteractive sudo apt-get -y install git gcc g++ clang cmake libc-dev dpkg-dev ninja-build p7zip pkg-config gettext asciidoctor
         DEBIAN_FRONTEND=noninteractive sudo apt-get -y install libpng-dev libsdl2-dev libopenal-dev libphysfs-dev libvorbis-dev libtheora-dev libglew-dev libxrandr-dev qtscript5-dev qt5-default libfribidi-dev libfreetype6-dev libharfbuzz-dev libfontconfig1-dev libcurl4-gnutls-dev gnutls-dev libsodium-dev
     
